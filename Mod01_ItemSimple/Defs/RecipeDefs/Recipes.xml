@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <RecipeDef>
+    <defName>Aprendizaje_HacerMonedaOro</defName>
+    <label>Acuñar Moneda de Oro</label>
+    <description>Fudir oro para crear monedas.</description>
+    <jobString>Acuñando moneda de oro</jobString>
+    <workAmount>1000</workAmount>
+    <workSkill>Crafting</workSkill>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Gold</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Gold</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Aprendizaje_MonedaOro>10</Aprendizaje_MonedaOro>
+    </products>
+    <recipeUsers>
+      <li>ElectricSmithy</li>
+      <li>FueledSmithy</li>
+    </recipeUsers>
+    <researchPrerequisites>
+      <li>Aprendizaje_AcunacionOro</li>
+    </researchPrerequisites>
+  </RecipeDef>
+
+</Defs>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>Aprendizaje_AcunacionOro</defName>
+    <label>Acuñación de Oro</label>
+    <description>Moneda de oro pura y brillante muy costosa, solo sirve para vender, algun dia tendra utilidad</description>
+    <baseCost>500</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>Main</tab>
+    <researchViewX>3</researchViewX>
+    <researchViewY>3</researchViewY>
+  </ResearchProjectDef>
+
+</Defs>

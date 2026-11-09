@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+  <RecipeDef>
+    <defName>Aprendizaje_DepositarPlata</defName>
+    <label>Depositar Plata</label>
+    <description>Deposita plata en la mesa de alquimia para convertirla en monedas de oro.</description>
+    <jobString>Depositar plata en la mesa de alquimia.</jobString>
+    <workerClass>MesaAlquimia.RecipeWorker_DepositarPlata</workerClass>
+    <workAmount>150</workAmount>
+    <workSkill>Crafting</workSkill>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Silver</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Silver</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products />
+    <recipeUsers>
+      <li>Aprendizaje_MesaAlquimia</li>
+    </recipeUsers>
+      
+
+  </RecipeDef>
+
+</Defs>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <WorkGiverDef>
+    <defName>Aprendizaje_HacerAlquimia</defName>
+    <label>hacer alquimia</label>
+    <giverClass>RimWorld.WorkGiver_DoBill</giverClass>
+    <workType>Crafting</workType>
+    <priorityInType>75</priorityInType>
+    <fixedBillGiverDefs>
+      <li>Aprendizaje_MesaAlquimia</li>
+    </fixedBillGiverDefs>
+    <verb>hacer</verb>
+    <gerund>haciendo alquimia en</gerund>
+  </WorkGiverDef>
+
+</Defs>

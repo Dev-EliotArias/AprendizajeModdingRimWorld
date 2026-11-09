@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Aprendizaje_MonedaOro</defName>
+    <label>moneda de oro</label>
+    <description>Moneda de oro pura y brillante muy costosa, solo sirve para vender, algun dia tendra utilidad</description>
+    <category>Item</category>
+    <thingClass>ThingWithComps</thingClass>
+    <graphicData>
+      <texPath>Things/Item/Resource/RocaDorada</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <stackLimit>75</stackLimit>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <alwaysHaulable>true</alwaysHaulable>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <statBases>
+      <MarketValue>50000</MarketValue>
+      <Mass>0.5</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <tradeability>Sellable</tradeability>
+    <useHitPoints>false</useHitPoints>
+  </ThingDef>
+
+</Defs>

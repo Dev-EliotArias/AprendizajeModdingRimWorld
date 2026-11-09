@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Aprendizaje_MesaAlquimia</defName>
+    <label>mesa de alquimia</label>
+    <description>Un aparato misterioso que transmuta plata en oro mediante procesos desconocidos.</description>
+    <thingClass>MesaAlquimia.Building_MesaAlquimia</thingClass>
+    <category>Building</category>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.5</fillPercent>
+    <tickerType>Normal</tickerType>
+    <size>(2,2)</size>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(0,0,2)</interactionCellOffset>
+    <designationCategory>Production</designationCategory>
+    <graphicData>
+      <texPath>Things/Building/Production/MesaAlquimia</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>3000</WorkToBuild>
+      <Mass>50</Mass>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <costList>
+      <Gold>20</Gold>
+      <ComponentIndustrial>4</ComponentIndustrial>
+      <Steel>100</Steel>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>300</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable" />
+    </comps>
+    <building>
+      <ai_chillDestination>false</ai_chillDestination>
+    </building>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+  </ThingDef>
+
+</Defs>

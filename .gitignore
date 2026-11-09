@@ -1,0 +1,89 @@
+# =====================================================================
+#  .gitignore - Aprendizaje de Modding de RimWorld
+#  Varios mods, cada uno con su propio proyecto C# en <Mod>/Source/
+# =====================================================================
+
+# ---------------------------------------------------------------------
+# 1. Salida de compilación de C# (la "basura" que más pesa)
+#    bin/ y obj/ se regeneran cada vez que compilas.
+# ---------------------------------------------------------------------
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Ll]og/
+[Ll]ogs/
+*.pdb
+*.cache
+*.tmp
+*.log
+
+# ---------------------------------------------------------------------
+# 2. DLL compiladas dentro de cada mod (Assemblies/)
+#    Se generan al compilar el proyecto de Source/, así que no hace
+#    falta subirlas. Si algún día quieres que el repo se pueda copiar
+#    directo a la carpeta Mods sin compilar, borra estas dos líneas.
+# ---------------------------------------------------------------------
+**/Assemblies/*.dll
+**/Assemblies/*.pdb
+
+# DLL de terceros que a veces se copian por error (Harmony, RimWorld)
+0Harmony.dll
+Assembly-CSharp.dll
+UnityEngine*.dll
+
+# ---------------------------------------------------------------------
+# 3. NuGet
+# ---------------------------------------------------------------------
+*.nupkg
+*.snupkg
+**/packages/*
+!**/packages/build/
+project.lock.json
+project.fragment.lock.json
+
+# ---------------------------------------------------------------------
+# 4. Visual Studio / Rider / VS Code
+# ---------------------------------------------------------------------
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.rsuser
+.idea/
+*.sln.iml
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# ---------------------------------------------------------------------
+# 5. Bocetos e imágenes de trabajo (no van al juego)
+#    Guarda tus imágenes originales / generadas en una carpeta
+#    _Bocetos/ dentro del mod y no se subirán.
+# ---------------------------------------------------------------------
+**/_Bocetos/
+Gemini_Generated_Image_*
+*.psd
+*.xcf
+*.kra
+*.blend
+*.blend1
+
+# ---------------------------------------------------------------------
+# 6. Sistema operativo
+# ---------------------------------------------------------------------
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# ---------------------------------------------------------------------
+# 7. Archivos comprimidos (para compartir el mod, no para el repo)
+# ---------------------------------------------------------------------
+*.zip
+*.7z
+*.rar

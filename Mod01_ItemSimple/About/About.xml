@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModMetaData>
+  <name>Aprendizaje 01 - Item Simple</name>
+  <author>DevEliotArias</author>
+  <packageId>develiotarias.aprendizaje01</packageId>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <description>Mod para aprender a hacer mods - Item Simple</description>
+</ModMetaData>
